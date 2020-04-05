@@ -1,0 +1,113 @@
+<!--John Spruijt © 2020-->
+<!--Deze puzzel is niet goed gemaakt en dat weet ik.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Puzzle 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark">
+
+<div class="d-block w-50 mx-auto bg-secondary">
+    <div class="bg-secondary text-right">
+        <div class="text-white float-right mr-4" >
+            <h1>Bootstrap Puzzle 2</h1>
+        </div>
+        <div class="dropdown text-left ml-3">
+            <a class="btn btn-secondary dropdown-toggle text-white" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li class="dropdown-item" ><a class="dropdown-item" href="index.html">Home</a></li>
+                <li class="dropdown-item" ><a class="dropdown-item" href="puzzle1.html">Puzzle 1</a></li>
+                <li class="dropdown-item" ><a class="dropdown-item" href="puzzle2.html">Puzzle 2</a></li>
+                <li class="dropdown-item" ><a class="dropdown-item" href="puzzle3.html">Puzzle 3</a></li>
+                <li class="dropdown-item" ><a class="dropdown-item" href="bonus.html">Bonus</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div  id="carouselExampleCaptions" class="carousel slidex" data-ride="carousel">
+        <div  class="carousel-inner">
+            <a class="carousel-item active" href="img/img1.jpg" target="_blank">
+                <img class="d-block w-100" src="img/img1.jpg">
+                <span class="carousel-caption d-none d-md-block font-weight-bold">Bekijk Boom 1</span>
+            </a>
+            <a class="carousel-item" href="img/img2.jpg" target="_blank">
+                <img class="d-block w-100" src="img/img2.jpg">
+                <span class="carousel-caption d-none d-md-block font-weight-bold">Bekijk Boom 2</span>
+            </a>
+            <a class="carousel-item" href="img/img3.jpg" target="_blank">
+                <img class="d-block w-100" src="img/img3.jpg">
+                <span class="carousel-caption d-none d-md-block font-weight-bold">Bekijk Boom 3</span>
+            </a>
+            <a class="carousel-item" href="img/img4.jpg" target="_blank">
+                <img class="d-block w-100" src="img/img4.jpg">
+                <span class="carousel-caption d-none d-md-block font-weight-bold">Bekijk Boom 4</span>
+            </a>
+            <a class="carousel-item" href="img/img5.jpg" target="_blank">
+                <img class="d-block w-100" src="img/img5.jpg">
+                <span class="carousel-caption d-none d-md-block font-weight-bold">Bekijk Boom 5</span>
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <div class="" id="accordionExample">
+            <div class="card col-5 mr-4 ml-4 float-left">
+                <img class="w-25 float-left bg-primary" src="img/item1.jpg">
+                <h2 class="card-title float-right bg-primary">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item1text" class="collapse card-text" aria-labelledby="hideOne" data-parent="#accordionExample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a id="hideOne" href="#item1text" class="collapsed" data-toggle="collapse" data-target="#item1text" aria-expanded="true" aria-controls="item1text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-5 float-left">
+                <img class="w-25" src="img/item2.jpg">
+                <h2 class="card-title  bg-primary">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item2text" class="collapse card-text" aria-labelledby="hideTwo" data-parent="#accordionExample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a id="hideTwo" href="#item2text" class="collapsed" data-toggle="collapse" data-target="#item2text" aria-expanded="true" aria-controls="item2text" href="#item2text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-5 mr-4 ml-4 mt-4 float-left">
+                <img class="w-25 bg-primary" src="img/item3.jpg">
+                <h2 class="card-title bg-primary">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item3text" class="collapse card-text" aria-labelledby="hideThree" data-parent="#accordionExample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a id="hideThree" href="#item3text" class="collapsed" data-toggle="collapse" data-target="#item3text" aria-expanded="true" aria-controls="item3text" href="#item3text">Lees meer &hellip;</a></p>
+            </div>
+        </div>
+
+        <div id="accordionExample">
+            <div class="card col-5 mr-4 mt-4 float-left">
+                <img class="w-25 bg-primary" src="img/item4.jpg">
+                <h2  class="card-title bg-primary">Etiam hendrerit vel sem ac accumsan</h2>
+                <p  id="item4text" class="collapse card-text" aria-labelledby="hideFour" data-parent="#accordionExample" id="item4text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a id="hideFour" href="#item4text" class="collapsed" data-toggle="collapse" data-target="#item4text" aria-expanded="true" aria-controls="item4text" href="#item4text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-5 mr-4 ml-4 mt-4 float-left">
+                <img class="w-25 bg-primary" src="img/item5.jpg">
+                <h2 class="card-title bg-primary">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item5text" class="collapse card-text" aria-labelledby="hideFive" data-parent="#accordionExample" id="item5text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a id="hideFive" href="#item5text" class="collapsed" data-toggle="collapse" data-target="#item5text" aria-expanded="true" aria-controls="item5text" href="#item5text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-5 mr-4 mt-4 float-left">
+                <img class="w-25 bg-primary" src="img/item6.jpg">
+                <h2 class="card-title bg-primary">Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item6text" class="collapse card-text" aria-labelledby="hideSix" data-parent="#accordionExample" id="item6text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a id="hideSix" href="#item6text" class="collapsed" data-toggle="collapse" data-target="#item6text" aria-expanded="true" aria-controls="item6text" href="#item6text">Lees meer &hellip;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-75">
+        <div class="text-center">
+            <span>Created with:</span>
+            <a href="https://getbootstrap.com/" target="_blank"><img src="img/logo-bootstrap.png"></a>
+            <a href="https://fontawesome.com/" target="_blank"><img src="img/logo-fontawsome.png"></a>
+            <a href="https://w3schools.com/" target="_blank"><img src="img/logo-w3schools.png"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
